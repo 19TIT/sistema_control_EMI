@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago</title>
+    <link rel="stylesheet" href="visa.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Realizar Pago</h2>
+        <form action="/procesar_pago" method="post">
+            <div class="card-details">
+                <label>
+                    <span>Número de Tarjeta</span>
+                    <input type="text" name="card-number">
+                </label>
+                <label>
+                    <span>Nombre del Titular</span>
+                    <input type="text" name="cardholder-name">
+                </label>
+                <div class="expiry-cvv">
+                    <label>
+                        <span>Fecha de Expiración</span>
+                        <input type="text" name="expiry-date">
+                    </label>
+                    <label>
+                        <span>CVV</span>
+                        <input type="text" name="cvv">
+                    </label>
+                </div>
+            </div>
+            <form action="#">
+                <!-- tus campos de entrada -->
+                <button type="submit" onclick="window.location.href='crearperfil.html'; return false;" class="btn">Realizar Pago</button>
+            </form>
+            
+        </form>
+    </div>
+</body>
+</html>

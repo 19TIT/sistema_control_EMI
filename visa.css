@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.payment-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.card-details label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.card-details input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.expiry-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry-cvv label {
+    flex: 1;
+}
+
+.expiry-cvv label:first-child {
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

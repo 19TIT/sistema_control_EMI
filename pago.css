@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.plan-selector {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.plan {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.plan h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    color: #666;
+}
+
+.plan button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background-color: #0056b3;
+}
+
+.payment-methods {
+    padding: 20px;
+    text-align: center;
+}

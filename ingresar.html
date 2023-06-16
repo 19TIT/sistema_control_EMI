@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagos</title>
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+    <h1>Selecciona tu Plan de Pago</h1>
+
+    <section class="plan-selector">
+        <div class="plan">
+            <h2>Plan Básico</h2>
+            <ul>
+                <li>Acceso a contenido básico</li>
+                <li>$10 por mes</li>
+            </ul>
+            <button onclick="seleccionarPlan('basico')">Elegir</button>
+        </div>
+        <div class="plan">
+            <h2>Plan Premium</h2>
+            <ul>
+                <li>Acceso a todo el contenido</li>
+                <li>Soporte 24/7</li>
+                <li>$20 por mes</li>
+            </ul>
+            <button onclick="seleccionarPlan('premium')">Elegir</button>
+        </div>
+        <div class="plan">
+            <h2>Plan Gold</h2>
+            <ul>
+                <li>Acceso a todo el contenido</li>
+                <li>Soporte 24/7</li>
+                <li>Contenido exclusivo</li>
+                <li>$30 por mes</li>
+            </ul>
+            <button onclick="seleccionarPlan('gold')">Elegir</button>
+        </div>
+    </section>
+
+    <section class="payment-methods" id="payment-methods" style="display: none;">
+        <h1>Selecciona Método de Pago</h1>
+        <form action="/procesar_pago" method="post">
+            <label>
+                <input type="radio" name="payment-method" value="tarjeta"> Tarjeta de crédito
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="paypal"> PayPal
+            </label>
+            <!-- Agrega más métodos de pago aquí -->
+
+            <form action="#">
+              <!-- tus campos de entrada -->
+              <button type="submit" onclick="window.location.href='Elegir.html'; return false;" class="btn">Realizar Pago</button>
+          </form>
+        </form>
+    </section>
+
+    <script>
+        function seleccionarPlan(plan) {
+            // Aquí puedes realizar acciones adicionales en función del plan seleccionado
+            document.getElementById('payment-methods').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PROYECTO-EMI</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- creando la barra de navegacion-->
+   <header class="header">
+    <nav class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Trabajos</a>
+          <a href="sobrenosotros.html">Sobre Nosotros</a>
+          <a href="#">Contacto</a>
+    </nav>
+    <form action="" class="search-bar">
+       <input type="text"  placeholder="Buscar...">
+       <button><i class='bx bx-search'></i></button>
+    </form>
+   </header>
+    <!-- CREACIÓN DEL FORMULARIO DE INICIO DE SESIÓN -->
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo"><i class='bx bxs-user'></i>USUARIO-EMI</h2>
+            <div class="text-item">
+                <h2>Bienvenido! <br><span>
+                    EMI-PRIME!
+                </span></h2>
+                <p> registro a la cuenta de X persona</p>
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="login-section">
+            <div class="form-box login">
+                <form action="">
+                    <h2>Ingresar</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password"  required>
+                        <label>Clave</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Recuerda</label>
+                        <a href="#">Olvidaste tu clave</a>
+                    </div>
+                    <a href="ingresar.html" class="btn">Ingreso</a>
+
+                    <div class="create-account">
+                        <p>Crear una cuenta nueva? <a href="#" class="register-link">Ingreso</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <form action="">
+
+                    <h2>Ingreso</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label >Nombre de Usuario</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" required>
+                        <label>Clave</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Estoy de acuerdo con los terminos y condiciones</label>
+                    </div>
+                    <a href="ingresar.html" class="btn">Ingreso</a>
+                    <div class="create-account">
+                        <p>Tienes una cuenta? <a href="" class="login-link">Ingresa</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- CREACIÓN DE FORMULARIO DE REGISTRO -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
